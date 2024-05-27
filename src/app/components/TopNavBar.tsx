@@ -13,7 +13,7 @@ export const TopNavBar = () => {
     <header
       aria-label="Site Header"
       className={cx(
-        "flex h-[var(--top-nav-bar-height)] items-center border-b-2 border-gray-100 px-3 lg:px-12",
+        "flex h-[var(--top-nav-bar-height)] items-center border-b-2 border-gray-100 px-3 lg:px-12 sticky",
         isHomePage && "bg-dot"
       )}
     >
@@ -23,13 +23,13 @@ export const TopNavBar = () => {
           <Image
             src={logoSrc}
             alt="OpenResume Logo"
-            className="h-8 w-full"
+            className="h-12 w-full"
             priority
           />
         </Link>
         <nav
           aria-label="Site Nav Bar"
-          className="flex items-center gap-2 text-sm font-medium"
+          className="flex items-center gap-2 text-xl font-medium "
         >
           {[
             ["/resume-builder", "Builder"],

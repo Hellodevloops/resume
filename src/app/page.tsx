@@ -3,6 +3,9 @@ import { Steps } from "home/Steps";
 import { Features } from "home/Features";
 import { Testimonials } from "home/Testimonials";
 import { QuestionsAndAnswers } from "home/QuestionsAndAnswers";
+import PricingPlans from "home/PricingPlans";
+import Footer from "home/Footer";
+
 
 export default function Home() {
   return (
@@ -11,7 +14,8 @@ export default function Home() {
       <Steps />
       <Features />
       <Testimonials />
-      <QuestionsAndAnswers />
+      <PricingPlans />
+      <Footer />
     </main>
   );
 }

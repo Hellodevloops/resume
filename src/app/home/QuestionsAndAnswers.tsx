@@ -1,4 +1,6 @@
+import React from "react";
 import { Link } from "components/documentation";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const QAS = [
   {
@@ -124,18 +126,40 @@ const QAS = [
 
 export const QuestionsAndAnswers = () => {
   return (
-    <section className="mx-auto max-w-3xl divide-y divide-gray-300 lg:mt-4 lg:px-2">
-      <h2 className="text-center text-3xl font-bold">Questions & Answers</h2>
-      <div className="mt-6 divide-y divide-gray-300">
-        {QAS.map(({ question, answer }) => (
-          <div key={question} className="py-6">
-            <h3 className="font-semibold leading-7">{question}</h3>
-            <div className="mt-3 grid gap-2 leading-7 text-gray-600">
-              {answer}
+    <div className="container mt-4">
+      <h2 className="text-center mb-4">Questions & Answers</h2>
+      <div className="row">
+        {QAS.map((qa, index) => (
+          <div className="col-md-6 mb-3" key={index}>
+            <div className="accordion" id={`accordion-${index}`}>
+              <div className="card">
+                <div className="card-header" id={`heading-${index}`}>
+                  <h2 className="mb-0">
+                    <button
+                      className="btn btn-link btn-block text-left"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target={`#collapse-${index}`}
+                      aria-expanded="true"
+                      aria-controls={`collapse-${index}`}
+                    >
+                      {qa.question}
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id={`collapse-${index}`}
+                  className="collapse"
+                  aria-labelledby={`heading-${index}`}
+                  data-parent={`#accordion-${index}`}
+                >
+                  <div className="card-body">{qa.answer}</div>
+                </div>
+              </div>
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
