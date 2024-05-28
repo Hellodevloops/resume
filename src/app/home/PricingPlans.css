@@ -1,0 +1,95 @@
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom,#fcdad8, #f6fefe);
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.pricing-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.pricing-plan {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.pricing-plan-header h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.pricing-plan-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.pricing-plan-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.pricing-plan-features ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.pricing-plan-features li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.pricing-plan-button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-plan-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-plans {
+    flex-direction: column;
+  }
+
+  .pricing-plan {
+    margin: 1rem 0;
+  }
+}
