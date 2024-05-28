@@ -1,5 +1,5 @@
 "use client";
-import heartSrc from "public/assets/heart.svg";
+import heart1 from "public/assets/heart1.png";
 import testimonialSpiegelSrc from "public/assets/testimonial-spiegel.jpg";
 import testimonialSantiSrc from "public/assets/testimonial-santi.jpg";
 import testimonialVivianSrc from "public/assets/testimonial-vivian.jpg";
@@ -63,10 +63,10 @@ export const Testimonials = ({ children }: { children?: React.ReactNode }) => {
   }, [isLg]);
 
   return (
-    <section className="mx-auto -mt-2 px-8 pb-24">
+    <section className="mx-auto mt-20 px-8 pb-24">
       <h2 className="mb-8 text-center text-3xl font-bold">
         Our {" "}
-        <Image src={heartSrc} alt="love" className="-mt-1 inline-block w-7" />{" "}
+        <Image src={heart1} alt="love" className="-mt-1 inline-block w-7" />{" "}
         Testimonial
       </h2>
       <div className="mx-auto mt-10 h-[235px] max-w-lg lg:h-[400px] lg:pt-28">

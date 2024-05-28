@@ -7,7 +7,7 @@ export const Hero = () => {
     <section className="lg:flex lg:h-[825px] lg:justify-center"  style={{ background: 'linear-gradient(to bottom,#fcdad8, #f6fefe)' }}>
       
       <FlexboxSpacer maxWidth={125} minWidth={0} className="hidden lg:block" />
-      <div className="mx-auto max-w-xl pt-8 text-center lg:mx-0 lg:grow lg:pt-32 lg:text-left">
+      <div className="mx-auto max-w-2xl pt-8 text-center lg:mx-0 lg:grow lg:pt-32 lg:text-left">
         <h1 className="text-primary pb-2 text-4xl font-bold lg:text-5xl">
         Create Your Winning Resume in Minutes.
           {/* <br />
