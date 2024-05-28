@@ -9,29 +9,19 @@ import { deepClone } from "lib/deep-clone";
 
 export const END_HOME_RESUME: Resume = {
   profile: {
-    name: "John Doe",
+    name: " Rich Jain",
     summary:
       "Software engineer obsessed with building exceptional products that people love",
-    email: "hello@openresume.com",
+    email: "hello@devloops.com",
     phone: "123-456-7890",
-    location: "NYC, NY",
-    url: "linkedin.com/in/john-doe",
+    location: "GJ, IND",
+    url: "linkedin.com/in/Rich-jain",
   },
   workExperiences: [
     {
-      company: "ABC Company",
+      company: "Devloops International",
       jobTitle: "Software Engineer",
-      date: "May 2023 - Present",
-      descriptions: [
-        "Lead a cross-functional team of 5 engineers in developing a search bar, which enables thousands of daily active users to search content across the entire platform",
-        "Create stunning home page product demo animations that drives up sign up rate by 20%",
-        "Write clean code that is modular and easy to maintain while ensuring 100% test coverage",
-      ],
-    },
-    {
-      company: "DEF Organization",
-      jobTitle: "Software Engineer Intern",
-      date: "Summer 2022",
+      date: "Summer 2023 -present",
       descriptions: [
         "Re-architected the existing content editor to be mobile responsive that led to a 10% increase in mobile user engagement",
         "Created a progress bar to help users track progress that drove up user retention by 15%",
@@ -39,7 +29,17 @@ export const END_HOME_RESUME: Resume = {
       ],
     },
     {
-      company: "XYZ University",
+      company: "SensePart",
+      jobTitle: "Software Engineer Intern",
+      date: "May 2022",
+      descriptions: [
+        "Lead a cross-functional team of 5 engineers in developing a search bar, which enables thousands of daily active users to search content across the entire platform",
+        "Create stunning home page product demo animations that drives up sign up rate by 20%",
+        "Write clean code that is modular and easy to maintain while ensuring 100% test coverage",
+      ],
+    },
+    {
+      company: "M.S University",
       jobTitle: "Research Assistant",
       date: "Summer 2021",
       descriptions: [
@@ -50,12 +50,12 @@ export const END_HOME_RESUME: Resume = {
   ],
   educations: [
     {
-      school: "XYZ University",
+      school: "M.S University",
       degree: "Bachelor of Science in Computer Science",
-      date: "Sep 2019 - May 2023",
-      gpa: "3.8",
+      date: "Sep 2019 - May 2022",
+      gpa: "4.8",
       descriptions: [
-        "Won 1st place in 2022 Education Hackathon, 2nd place in 2023 Health Tech Competition",
+        "Won 1st place in 2021 Education Hackathon, 2nd place in 2022 Health Tech Competition",
         "Teaching Assistant for Programming for the Web (2022 - 2023)",
         "Coursework: Object-Oriented Programming (A+), Programming for the Web (A+), Cloud Computing (A), Introduction to Machine Learning (A-), Algorithms Analysis (A-)",
       ],
@@ -64,7 +64,7 @@ export const END_HOME_RESUME: Resume = {
   projects: [
     {
       project: "OpenResume",
-      date: "Spring 2023",
+      date: "Spring 2022",
       descriptions: [
         "Created and launched a free resume builder web app that allows thousands of users to create professional resume easily and land their dream jobs",
       ],

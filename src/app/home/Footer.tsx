@@ -1,5 +1,8 @@
 import React from 'react';
 import './Footer.css';
+import Link from 'next/link';
+import Image from 'next/image';
+import logoSrc from "public/tts.png";
 
 const Footer: React.FC = () => {
   return (
@@ -7,7 +10,13 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-column">
           <div className="footer-logo">
-            <img src="/tts.png" alt="Logo" />
+          <Link href="/">
+          <span className="sr-only">OpenResume</span>
+          <Image
+            src={logoSrc} 
+            />
+         
+        </Link>
             {/* <p>CV Builder</p> */}
           </div>
         </div>
@@ -17,17 +26,18 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-column">
           <h3>Contact Us</h3>
-          <p>123 Main St, Anytown, USA</p>
-          <p>Email: info@cvbuilder.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Add: 2nd Floor, Kanchwala Building, College Rd, above Viju's Dabeli, near BYK College, Kulkarni Baug, Nashik, Maharashtra 422005</p>
+          <p>Email: enquiry@ttsnasik.com</p>
+          <p>Phone: +91-7249725544</p>
         </div>
         <div className="footer-column">
           <h3>Follow Us</h3>
           <ul>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="https://www.facebook.com/ttsnasik">Facebook</a></li>
+            <li><a href="https://www.instagram.com/ttsnasik/">Instagram</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Instagram</a></li>
+           
           </ul>
         </div>
       </div>
