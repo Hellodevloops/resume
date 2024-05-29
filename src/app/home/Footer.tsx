@@ -12,10 +12,8 @@ const Footer: React.FC = () => {
           <div className="footer-logo">
           <Link href="/">
           <span className="sr-only">OpenResume</span>
-          <Image
-            src={logoSrc} 
-            />
-         
+          <Image src={logoSrc} alt='footer-logo'
+            />  
         </Link>
             {/* <p>CV Builder</p> */}
           </div>
