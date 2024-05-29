@@ -36,8 +36,8 @@ const LG_TESTIMONIALS_CLASSNAMES = [
   "translate-x-44 translate-y-24 opacity-40",
   "translate-x-32 -translate-y-28 opacity-40",
 ];
-const SM_TESTIMONIALS_CLASSNAMES = ["z-10", "opacity-0", "opacity-0"];
-const ROTATION_INTERVAL_MS = 8 * 1000; // 8s
+const SM_TESTIMONIALS_CLASSNAMES = ["z-10", "opacity-20", "opacity-20"];
+const ROTATION_INTERVAL_MS = 4 * 1000; // 4s
 
 export const Testimonials = ({ children }: { children?: React.ReactNode }) => {
   const [testimonialsClassNames, setTestimonialsClassNames] = useState(
